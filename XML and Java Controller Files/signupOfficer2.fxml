@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="470.0" style="-fx-background-color: #132c72;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semester.project.SignupOfficer2Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="28.0" text="Only last tab to fill" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="63.0" text="to continue to use this Applciation" textFill="LIGHTGRAY">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="91.0" text="Department Information" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="beatName" layoutX="16.0" layoutY="146.0" prefHeight="35.0" prefWidth="179.0" promptText="Beat Name" style="-fx-border-color: #091f53;" />
+      <TextField fx:id="empID" layoutX="15.0" layoutY="191.0" onMouseClicked="#setEmpID" prefHeight="35.0" prefWidth="179.0" promptText="Employee ID" style="-fx-border-color: #091f53;" />
+      <Button fx:id="signup" layoutX="344.0" layoutY="362.0" mnemonicParsing="false" onAction="#requestForAccountButtonAction" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #091f53; -fx-border-color: #ffffff;" text="Request Account" textFill="WHITE" />
+      <ChoiceBox fx:id="Rank" layoutX="76.0" layoutY="279.0" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #091f53; -fx-border-color: #ffffff;" />
+      <Label layoutX="16.0" layoutY="284.0" text="Rank" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBox" layoutX="15.0" layoutY="319.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="316.0" text="You accept the terms and Condition of this application" textFill="LIGHTGRAY" />
+      <TextField fx:id="email" layoutX="15.0" layoutY="235.0" prefHeight="35.0" prefWidth="179.0" promptText="email address" style="-fx-border-color: #091f53;" />
+   </children>
+</AnchorPane>

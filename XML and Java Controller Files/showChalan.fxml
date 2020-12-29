@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1396.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="semester.project.ShowChalanController">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="14.0" layoutY="14.0" prefHeight="322.0" prefWidth="1376.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="103.0" text="Offender Name" />
+          <TableColumn fx:id="cnic" prefWidth="103.0" text="CNIC" />
+            <TableColumn fx:id="phoneNumber" prefWidth="103.0" text="Phone Number" />
+            <TableColumn fx:id="age" prefWidth="50.0" text="Age" />
+            <TableColumn fx:id="reason" prefWidth="450.0" text="Reason of Chalan" />
+            <TableColumn fx:id="date" prefWidth="103.0" text="Date" />
+            <TableColumn fx:id="time" prefWidth="103.0" text="Time" />
+            <TableColumn fx:id="officerName" prefWidth="103.0" text="Officer Name" />
+            <TableColumn fx:id="vehicleName" prefWidth="103.0" text="Vehicle Name" />
+            <TableColumn fx:id="vehicleType" prefWidth="103.0" text="Vehicle Type" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
